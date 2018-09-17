@@ -53,7 +53,7 @@
 <fileset dir="src/web"/>
 </copy>
 </target>-->
-<target name="package" depends="create-jar,copy-web-files">
+<target name="package" depends="create-jar">
 <zip destfile="${dist.location}/app-${appversion}.zip">
 <fileset dir="build\jar"/>
 <fileset dir="build/web"/>
