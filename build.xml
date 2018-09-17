@@ -48,11 +48,11 @@
 <target name="create-jar" depends="compile-java-source">
 <jar destfile="build/jar/app-${appversion}.jar" basedir="build/classes"/>
 </target>
-<target name="copy-web-files">
+<!--  <target name="copy-web-files">
 <copy todir="build/web">
 <fileset dir="src/web"/>
 </copy>
-</target>
+</target>-->
 <target name="package" depends="create-jar,copy-web-files">
 <zip destfile="${dist.location}/app-${appversion}.zip">
 <fileset dir="build\jar"/>
